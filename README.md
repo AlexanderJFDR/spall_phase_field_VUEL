@@ -5,6 +5,16 @@ This program is developed using Abaqus VUEL subroutines to simulate spall fractu
 Zhang, H., Peng, H., Pei, X. Y., Li, P., Tang, T. G., & Cai, L. C. (2021). 
 A phase-field model for spall fracture. *Journal of Applied Physics*, 129(12).
 
+## Important Notes
+
+When running Abaqus VUEL subroutines, it is essential to select double precision solving. Specifically:
+
+- In Abaqus/CAE, when creating or editing a job:
+  1. Go to **Edit Job** → **Precision** tab
+  2. Under **Abaqus/Explicit precision**, select **Double-XX** for optimal accuracy
+
+Using double precision is critical for the explicit numerical stability and accuracy of phase-field spall fracture simulations.
+
 ## Directory Structure
 
 - Code Files: Contains VUEL source codes and input files for 1D, 2D_A, and 2D_B cases.
